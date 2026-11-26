@@ -1,0 +1,95 @@
+% LaTeX-template voor bijdragen aan het Colloquium Vervoersplanologisch Speurwerk (CVS).
+% - gemaakt door L.F.A. (Leon) Wetzel, MSc MA ten behoeve van alle congresdeelnemers (en in het bijzonder alle beta's die Word beu zijn :p).
+% - dit werk volgt de licentie van https://www.latex-project.org/lppl/.
+
+%!TEX program = lualatex
+\documentclass[10pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{sectsty} % Voor aanpassing van sectie-opmaak
+\usepackage{fontspec}
+\setmainfont{Verdana}
+\usepackage{parskip}
+\usepackage[dutch]{babel} % change this if your write your paper in non-Dutch
+
+% Bronbeheer
+\usepackage{natbib}
+\bibliographystyle{apalike}
+
+% Instellingen voor de pagina
+\geometry{
+    a4paper,
+    margin=25mm,
+}
+
+% Globale opmaakinstellingen
+\fontsize{10pt}{10pt}\selectfont
+\setstretch{1} % Standaard regelafstand voor het hele document
+
+% Sectie-opmaak aanpassen
+\sectionfont{\fontsize{10pt}{10pt}\selectfont\bfseries} % Opmaak voor \section
+\subsectionfont{\fontsize{10pt}{10pt}\selectfont\itshape} % Opmaak voor \subsection
+\subsubsectionfont{\fontsize{10pt}{10pt}\selectfont\itshape} % Opmaak voor \subsubsection
+
+\begin{document}
+
+\thispagestyle{empty}
+
+% Titelpagina handmatig opmaken
+\begin{center}
+    \textbf{\large Jouw fantastische bijdrage aan CVS} \par
+    \vspace{0.5cm}
+    % Auteursinformatie in een minipage om witregels te vermijden
+    \begin{minipage}{\textwidth}
+        \centering
+        \normalsize
+        [Naam auteur 1] -- [Werkgever auteur 1] -- [e-mailadres auteur 1] \par
+        [Naam auteur 2] -- [Werkgever auteur 2] -- [e-mailadres auteur 2] \par
+        [Naam auteur 3] -- [Werkgever auteur 3] -- [e-mailadres auteur 3]
+    \end{minipage}
+    \vspace{0.5cm}
+
+    \begin{minipage}{\textwidth}
+        \centering
+        \normalsize
+        \textbf{Bijdrage aan het Colloquium Vervoersplanologisch Speurwerk} \par
+        \textbf{18 en 19 november 2027, Lelystad}
+    \end{minipage}
+\end{center}
+
+% Samenvatting
+\section*{Samenvatting}
+% \setstretch{1.0} % Specifieke regelafstand voor de samenvatting
+[Tekst samenvatting (300 tot 400 woorden) – lettertype Verdana 10 pt, regelafstand 1,0] 
+
+\textit{Let op:}
+Wees u ervan bewust dat de samenvatting wordt gebruikt voor het indelen van het CVS-programma. Met een goede samenvatting draagt u bij aan de kwaliteit van het programma. De samenvatting wordt ook opgenomen in het samenvattingen- en programmaboek. Daarop baseren veel deelnemers de keuze voor de sessies die zij bijwonen. Zorg dat de samenvatting op deze pagina past, dan past deze in het samenvattingenboek ook op de pagina. Graag een Nederlandse samenvatting schrijven, ook wanneer de rest van het paper Engelstalig is.
+
+\pagebreak
+
+% Hoofdstukken
+\section{[Titel eerste hoofdstuk]}
+Verwijzen naar een bron kan zo \citep{borsje2026} of volgens \citet{borsje2026} op deze manier.
+
+\subsection{[Titel eerste paragraaf]}
+[Tekst]
+
+\subsubsection*{[Titel eerste subparagraaf]}
+[Tekst]
+
+\bibliography{bronnen}
+
+% Literatuur of Referenties
+% \section*{Literatuur of Referenties}
+% \setstretch{1.2} % Terug naar standaard regelafstand
+% Vergeet uw literatuurverwijzingen niet! Te vermelden zijn:
+% \begin{itemize}
+%     \item de auteur(s);
+%     \item de volledige titel;
+%     \item van boeken e.d. de plaats van uitgifte, de uitgever en het jaar van publicatie;
+%     \item van tijdschriftartikelen de volledige naam van het tijdschrift, de jaargang of het jaartal, het nummer of de maand, en de paginanummers.
+% \end{itemize}
+% Bij voorkeur Harvard style aanhouden.
+
+\end{document}
