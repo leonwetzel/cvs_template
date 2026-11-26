@@ -1,6 +1,7 @@
 % LaTeX-template voor bijdragen aan het Colloquium Vervoersplanologisch Speurwerk (CVS).
 % - gemaakt door L.F.A. (Leon) Wetzel, MSc MA ten behoeve van alle congresdeelnemers (en in het bijzonder alle beta's die Word beu zijn :p).
 % - dit werk volgt de licentie van https://www.latex-project.org/lppl/.
+% - aanbevolen wordt als volgt te compileren (i.e. recipe): [lualatex, bibtex, lualatex]
 
 %!TEX program = lualatex
 \documentclass[10pt, a4paper]{article}
@@ -78,18 +79,8 @@ Verwijzen naar een bron kan zo \citep{borsje2026} of volgens \citet{borsje2026} 
 \subsubsection*{[Titel eerste subparagraaf]}
 [Tekst]
 
-\bibliography{bronnen}
-
 % Literatuur of Referenties
-% \section*{Literatuur of Referenties}
-% \setstretch{1.2} % Terug naar standaard regelafstand
-% Vergeet uw literatuurverwijzingen niet! Te vermelden zijn:
-% \begin{itemize}
-%     \item de auteur(s);
-%     \item de volledige titel;
-%     \item van boeken e.d. de plaats van uitgifte, de uitgever en het jaar van publicatie;
-%     \item van tijdschriftartikelen de volledige naam van het tijdschrift, de jaargang of het jaartal, het nummer of de maand, en de paginanummers.
-% \end{itemize}
 % Bij voorkeur Harvard style aanhouden.
+\bibliography{bronnen}
 
 \end{document}
